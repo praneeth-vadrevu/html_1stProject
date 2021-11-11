@@ -1,15 +1,22 @@
 <DOCKTYPE  html> 
  <html>
      <head> 
-        <link rel="stylesheet" href="external.css">
+        
         <title> Backtracking</title>
+        <link rel="stylesheet" href="external.css">
+        <style> 
+            label{
+            color:springgreen;
+        }
+        </style>
+        
      </head>
 <body> 
 <h1> Backtracking</h1>
 <p>Copyright ©2002 by David Matuszek </p>
 
 <p> Backtracking is a form of recursion.</p>
-<p> The usual <em>scenario</em> is that you are faced with a <i>number</i> of options, and you must choose one of these. After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a goal state; if you didn't, it isn't.</p>
+<p> The usual scenario is that you are faced with a number of options, and you must choose one of these. After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a <em>goal state; </em> if you didn't, it isn't.</p>
 <p> Conceptually, you start at the root of a tree; the tree probably has some good leaves and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.</p>
 <p> <strong>Suppose</strong> you get to a bad leaf. <b>You</b> can backtrack to continue the search for a good leaf by revoking your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try another choice at that node. If you end up at the root with no options left, there are no good leaves to be found.</p>
 <p> This needs an example.</p>
@@ -148,3 +155,14 @@
     <input type="button" value="submit">
 </fieldset>
 </form>
+<br />
+<label style="color:red;"> Design 2 </label>
+<div style="background-color:violet; color:forestgreen;"> This is div1 </div>
+<div> This is div2 </div>
+<span style=" background-color:gray;"> This is span1 </span>
+<span> This is span2 </span>
+<p> hello</p> <p> hi </p>
+<textarea style= "background-color:indianred; color:indigo;"> This is textarea1 </textarea>
+<textarea> this is textarea2 </textarea>
+<!-- <canvas> hey </canvas> -->
+<h1 style="background-color:hotpink; "> test heading </h1>
